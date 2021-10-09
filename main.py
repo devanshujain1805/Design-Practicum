@@ -44,8 +44,8 @@ while True:
         
         #dryer
         #the dryer and exhaust switch will be on
-	    GPIO.output(output_pin_dryer, True)
-	    GPIO.output(output_pin_dryer, False)
+	GPIO.output(output_pin_dryer, True)
+	GPIO.output(output_pin_dryer, False)
 	
 	    # these processes will take around 10 seconds
         time.sleep(10)
