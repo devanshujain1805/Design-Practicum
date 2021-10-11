@@ -33,8 +33,9 @@ while True:
         GPIO.output(output_pin,False)
         
         # fog
-        # the fog switch will be on
+        # the fogand exhaust switch will be on
         GPIO.output(output_pin_fog, True)
+	GPIO.output(output_pin_exhaust, True)
         
         # this process will take around 25 seconds
         time.sleep(25)
@@ -43,14 +44,13 @@ while True:
         GPIO.output(output_pin,False)
         
         #dryer
-        #the dryer and exhaust switch will be on
+        #the dryer switch will be on
 	GPIO.output(output_pin_dryer, True)
-	GPIO.output(output_pin_dryer, False)
 	
-	    # these processes will take around 10 seconds
+	 #these processes will take around 10 seconds
         time.sleep(10)
         
-        # the dryer switch will be off
+        # the dryer and exhaust switch will be off
         GPIO.output(output_pin,False)
         GPIO.output(output_pin_exhaust, False)
         
